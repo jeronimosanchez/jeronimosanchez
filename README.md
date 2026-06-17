@@ -10,16 +10,17 @@ Construyo el **método y la automatización** que llevan un agente conversaciona
 
 ## Qué resuelve
 
-Iterar un agente conversacional es caro, desplegar es arriesgado, y medir
-si algo mejoró es difícil. CD convierte ese ciclo en un pipeline reproducible:
+Iterar un agente conversacional es caro, desplegar es arriesgado, y medir la
+mejora es difícil. CD **está diseñado para** convertir ese ciclo en un pipeline reproducible:
 
-- **Conocimiento acumulado** — el conocimiento de diseño conversacional se
-  acumula en la organización en lugar de quedar disperso en personas.
-- **Herramienta validada** — los equipos que construyen agentes conversacionales
-  disponen de un pipeline probado desde el primer día.
-- **Agnóstico de plataforma** — el conocimiento se organiza separando principios
-  universales de diseño conversacional del conocimiento específico de plataforma,
-  lo que permite su extensión natural a otras infraestructuras conversacionales.
+- **Conocimiento que se acumula y realimenta** — el conocimiento de diseño
+  conversacional se acumula en la organización (no en personas) y **realimenta el
+  propio sistema** en cada ciclo.
+- **Herramienta reutilizable** — un pipeline que los equipos reutilizan entre
+  proyectos, en lugar de reinventarlo cada vez.
+- **Agnóstico de plataforma** — separa principios universales de diseño
+  conversacional del conocimiento específico de plataforma, para extenderse a
+  otras infraestructuras conversacionales.
 
 ---
 
