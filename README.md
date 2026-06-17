@@ -47,16 +47,17 @@ combinan funcionalidad operativa con líneas de desarrollo activas.*
   el humano aprueba lo que va a producción y elige qué fix se aplica.
 
 **Análisis y validación**
-- Diagnóstico preciso de causa raíz — identifica en qué capa falla el agente
-  con evidencia trazable, no inferencias.
+- Diagnóstico de causa raíz con evidencia trazable — localiza **dónde falla** el
+  agente a partir del trace y los datos, distinguiendo lo **verificado** de lo
+  **supuesto** (no inferencias a ciegas).
 - Tres sistemas de control con distinto nivel de implementación — **hard eval**
   (operativo: validación determinista), **juez** (operativo: calidad
   conversacional con rúbricas), **adversarial** (en construcción: genera
   y enfrenta candidatos).
-- Diagnóstico y solución forman un todo validado por dato real — detecta el
-  fallo, genera candidatos de fix, despliega los mejores y contrasta su
-  eficacia antes/después contra la plataforma real. El mismo dato que detectó
-  el problema confirma que está resuelto.
+- Diagnóstico y reparación como un ciclo guiado por dato — el sistema **está
+  diseñado para** detectar el fallo, generar y cribar candidatos de fix, desplegar
+  el mejor y confirmar su eficacia contra la plataforma real. El mismo dato que
+  detectó el problema confirma que está resuelto. *(Bucle completo en construcción.)*
 
 **Conocimiento y eficiencia**
 - Conocimiento incremental en capas — enriquecido desde dos fuentes:
