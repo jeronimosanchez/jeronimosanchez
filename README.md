@@ -51,7 +51,7 @@ combinan funcionalidad operativa con líneas de desarrollo activas.*
   agente a partir del trace y los datos, distinguiendo lo **verificado** de lo
   **supuesto** (no inferencias a ciegas).
 - Tres sistemas de control con distinto nivel de implementación — **hard eval**
-  (operativo: validación determinista), **juez** (operativo: calidad
+  (operativo: validación determinista), **juez** (funciona, sin calibrar: calidad
   conversacional con rúbricas), **adversarial** (en construcción: genera
   y enfrenta candidatos).
 - Diagnóstico y reparación como un ciclo guiado por dato — el sistema **está
