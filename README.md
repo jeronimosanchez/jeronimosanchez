@@ -1,27 +1,10 @@
 # Jerónimo Sánchez
 
-Diseño y construyo sistemas que garantizan la calidad de agentes
-conversacionales a lo largo de su ciclo de vida.
+*Diseño y aseguramiento de calidad de agentes conversacionales*
 
----
-
-## Sistema de Automatización CD
-
-| Repo | Qué hace | Estado |
-|---|---|---|
-| [ACT](https://github.com/jeronimosanchez/cx-automation-template) | Deploy idempotente de artefactos a Dialogflow CX — 12 recursos, CI/CD con WIF | ✅ Operativo |
-| [QAP](https://github.com/jeronimosanchez/agent-validation-engine) | Validación: 51 TCs contra el agente real + cribador local $0 con LLMs | ✅ Operativo — en evolución |
-| [GEN](https://github.com/jeronimosanchez/GEN) | Generación adversarial de artefactos conversacionales | 🔵 En construcción |
-| [RES](https://github.com/jeronimosanchez/RES) | Investigación continua que alimenta la knowledge base | 🔵 En construcción |
-
----
-
-## El caso de uso — Petal
-
-Petal es un agente de floristería en Dialogflow CX construido como simulación
-de producción real. Sus problemas de robustez iniciales se convirtieron en la
-razón de construir el sistema CD: cada optimización pasa por el pipeline,
-cerrando el ciclo. Petal y el sistema co-evolucionan.
+Construyo el **método y la automatización** que llevan un agente conversacional por todo su ciclo
+—diseñar, desplegar, validar y mejorar— con **criterio**, a **coste mínimo**, y haciendo que el
+**conocimiento se acumule en la organización, no en las personas**.
 
 ---
 
@@ -37,6 +20,17 @@ si algo mejoró es difícil. CD convierte ese ciclo en un pipeline reproducible:
 - **Agnóstico de plataforma** — el conocimiento se organiza separando principios
   universales de diseño conversacional del conocimiento específico de plataforma,
   lo que permite su extensión natural a otras infraestructuras conversacionales.
+
+---
+
+## Sistema de Automatización CD
+
+| Repo | Qué hace | Estado |
+|---|---|---|
+| [ACT](https://github.com/jeronimosanchez/cx-automation-template) | Deploy idempotente de artefactos a Dialogflow CX — 12 recursos, CI/CD con WIF | ✅ Operativo |
+| [QAP](https://github.com/jeronimosanchez/agent-validation-engine) | Validación: 51 TCs contra el agente real + cribador local $0 con LLMs | ✅ Operativo — en evolución |
+| [GEN](https://github.com/jeronimosanchez/GEN) | Generación adversarial de artefactos conversacionales | 🔵 En construcción |
+| [RES](https://github.com/jeronimosanchez/RES) | Investigación continua que alimenta la knowledge base | 🔵 En construcción |
 
 ---
 
@@ -60,8 +54,8 @@ combinan funcionalidad operativa con líneas de desarrollo activas.*
   y enfrenta candidatos).
 - Diagnóstico y solución forman un todo validado por dato real — detecta el
   fallo, genera candidatos de fix, despliega los mejores y contrasta su
-  eficacia antes/después en producción. El mismo dato que detectó el problema
-  confirma que está resuelto.
+  eficacia antes/después contra la plataforma real. El mismo dato que detectó
+  el problema confirma que está resuelto.
 
 **Conocimiento y eficiencia**
 - Conocimiento incremental en capas — enriquecido desde dos fuentes:
@@ -70,3 +64,12 @@ combinan funcionalidad operativa con líneas de desarrollo activas.*
 - Diseñado para coste mínimo — automatización local y agentes en local
   filtran y criban a coste cero. Solo escala a cloud para validar
   los mejores candidatos.
+
+---
+
+## El caso de uso — Petal
+
+Petal es un agente de floristería en Dialogflow CX construido como simulación
+de producción real. Sus problemas de robustez iniciales se convirtieron en la
+razón de construir el sistema CD: cada optimización pasa por el pipeline,
+cerrando el ciclo. Petal y el sistema co-evolucionan.
