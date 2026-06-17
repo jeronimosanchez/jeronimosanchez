@@ -16,11 +16,11 @@ mejora es difícil. CD **está diseñado para** convertir ese ciclo en un pipeli
 - **Conocimiento que se acumula y realimenta** — el conocimiento de diseño
   conversacional se acumula en la organización (no en personas) y **realimenta el
   propio sistema** en cada ciclo.
-- **Herramienta reutilizable** — un pipeline que los equipos reutilizan entre
-  proyectos, en lugar de reinventarlo cada vez.
-- **Agnóstico de plataforma** — separa principios universales de diseño
-  conversacional del conocimiento específico de plataforma, para extenderse a
-  otras infraestructuras conversacionales.
+- **Herramienta reutilizable** — un pipeline diseñado para que los equipos lo
+  reutilicen entre proyectos, en lugar de reinventarlo cada vez.
+- **Vocación agnóstica** — separa los principios universales de diseño
+  conversacional del conocimiento específico de plataforma, **diseñado para
+  extenderse** a otras infraestructuras (objetivo aún por demostrar).
 
 ---
 
@@ -29,9 +29,11 @@ mejora es difícil. CD **está diseñado para** convertir ese ciclo en un pipeli
 | Repo | Qué hace | Estado |
 |---|---|---|
 | [ACT](https://github.com/jeronimosanchez/cx-automation-template) | Deploy idempotente de artefactos a Dialogflow CX — 12 recursos, CI/CD con WIF | ✅ Operativo |
-| [QAP](https://github.com/jeronimosanchez/agent-validation-engine) | Validación: 51 TCs contra el agente real + cribador local $0 con LLMs | ✅ Operativo — en evolución |
+| [QAP](https://github.com/jeronimosanchez/agent-validation-engine) | Validación: 51 TCs contra el agente real + cribador local $0 con LLMs (en calibración) | ✅ Operativo — en evolución |
 | [GEN](https://github.com/jeronimosanchez/GEN) | Generación adversarial de artefactos conversacionales | 🔵 En construcción |
 | [RES](https://github.com/jeronimosanchez/RES) | Investigación continua que alimenta la knowledge base | 🔵 En construcción |
+
+Las 4 líneas las coordina **CD**, el hub de conocimiento y método (KB + metodología). Mapa completo, recorridos y estado de cada pieza en **[SISTEMA.md](https://github.com/jeronimosanchez/CD/blob/main/SISTEMA.md)**.
 
 ---
 
@@ -41,8 +43,8 @@ mejora es difícil. CD **está diseñado para** convertir ese ciclo en un pipeli
 combinan funcionalidad operativa con líneas de desarrollo activas.*
 
 **Control y gobernanza**
-- Control total del sistema conversacional desde lenguaje natural — cualquier
-  componente se despliega, prueba u optimiza sin tocar la plataforma directamente.
+- Control del sistema conversacional desde lenguaje natural — cualquier
+  componente se despliega y se prueba sin tocar la plataforma directamente.
 - El humano decide en los puntos que importan — la IA orquesta el ciclo;
   el humano aprueba lo que va a producción y elige qué fix se aplica.
 
@@ -54,18 +56,19 @@ combinan funcionalidad operativa con líneas de desarrollo activas.*
   (operativo: validación determinista), **juez** (funciona, sin calibrar: calidad
   conversacional con rúbricas), **adversarial** (en construcción: genera
   y enfrenta candidatos).
-- Diagnóstico y reparación como un ciclo guiado por dato — el sistema **está
-  diseñado para** detectar el fallo, generar y cribar candidatos de fix, desplegar
-  el mejor y confirmar su eficacia contra la plataforma real. El mismo dato que
-  detectó el problema confirma que está resuelto. *(Bucle completo en construcción.)*
+- **Sistema A — diagnóstico y reparación en un ciclo guiado por dato** — el sistema
+  **está diseñado para** detectar el fallo, generar y cribar candidatos de fix,
+  desplegar el mejor y confirmar su eficacia contra la plataforma real. El mismo dato
+  que detectó el problema confirma que está resuelto; el fix validado se destila como
+  **receta reutilizable en el KB (Sistema B)**. *(Bucle completo en construcción.)*
 
 **Conocimiento y eficiencia**
 - Conocimiento incremental en capas — enriquecido desde dos fuentes:
   investigación contrastada y experiencia empírica en el proyecto piloto.
   Reutilizable entre clientes.
-- Diseñado para coste mínimo — automatización local y agentes en local
-  filtran y criban a coste cero. Solo escala a cloud para validar
-  los mejores candidatos.
+- **El embudo — coste mínimo por diseño** — un cribador local ($0) propone y
+  filtra candidatos; la plataforma real solo confirma los finalistas. El cribador
+  no necesita ser perfecto: le basta con **ordenar bien**.
 
 ---
 
