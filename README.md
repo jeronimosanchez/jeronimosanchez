@@ -61,7 +61,7 @@ combinan funcionalidad operativa con líneas de desarrollo activas.*
 
 **Conocimiento y eficiencia**
 - Conocimiento incremental en capas — enriquecido desde dos fuentes:
-  investigación contrastada y experiencia empírica en proyectos reales.
+  investigación contrastada y experiencia empírica en el proyecto piloto.
   Reutilizable entre clientes.
 - Diseñado para coste mínimo — automatización local y agentes en local
   filtran y criban a coste cero. Solo escala a cloud para validar
